@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		FDBC3B41210CFE54006C1FCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBC3B40210CFE54006C1FCB /* AppDelegate.swift */; };
-		FDBC3B43210CFE54006C1FCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBC3B42210CFE54006C1FCB /* ViewController.swift */; };
 		FDBC3B46210CFE54006C1FCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDBC3B44210CFE54006C1FCB /* Main.storyboard */; };
 		FDBC3B48210CFE55006C1FCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDBC3B47210CFE55006C1FCB /* Assets.xcassets */; };
 		FDBC3B4B210CFE55006C1FCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDBC3B49210CFE55006C1FCB /* LaunchScreen.storyboard */; };
 		FDBC3B56210CFE55006C1FCB /* VincentVanGoghTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBC3B55210CFE55006C1FCB /* VincentVanGoghTests.swift */; };
 		FDBC3B61210CFE55006C1FCB /* VincentVanGoghUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBC3B60210CFE55006C1FCB /* VincentVanGoghUITests.swift */; };
+		FDBC3B6F210D048B006C1FCB /* PaintngCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBC3B6E210D048B006C1FCB /* PaintngCollection.swift */; };
+		FDBC3B74210D05C2006C1FCB /* PaintingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBC3B73210D05C2006C1FCB /* PaintingCell.swift */; };
+		FDBC3B78210D069B006C1FCB /* Painting.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBC3B77210D069B006C1FCB /* Painting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		FDBC3B3D210CFE54006C1FCB /* VincentVanGogh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VincentVanGogh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDBC3B40210CFE54006C1FCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FDBC3B42210CFE54006C1FCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FDBC3B45210CFE54006C1FCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FDBC3B47210CFE55006C1FCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDBC3B4A210CFE55006C1FCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		FDBC3B5C210CFE55006C1FCB /* VincentVanGoghUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VincentVanGoghUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDBC3B60210CFE55006C1FCB /* VincentVanGoghUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VincentVanGoghUITests.swift; sourceTree = "<group>"; };
 		FDBC3B62210CFE55006C1FCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDBC3B6E210D048B006C1FCB /* PaintngCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintngCollection.swift; sourceTree = "<group>"; };
+		FDBC3B73210D05C2006C1FCB /* PaintingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintingCell.swift; sourceTree = "<group>"; };
+		FDBC3B77210D069B006C1FCB /* Painting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Painting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +101,9 @@
 		FDBC3B3F210CFE54006C1FCB /* VincentVanGogh */ = {
 			isa = PBXGroup;
 			children = (
-				FDBC3B40210CFE54006C1FCB /* AppDelegate.swift */,
-				FDBC3B42210CFE54006C1FCB /* ViewController.swift */,
-				FDBC3B44210CFE54006C1FCB /* Main.storyboard */,
-				FDBC3B47210CFE55006C1FCB /* Assets.xcassets */,
-				FDBC3B49210CFE55006C1FCB /* LaunchScreen.storyboard */,
+				FDBC3B72210D04B6006C1FCB /* Views */,
+				FDBC3B70210D0491006C1FCB /* Controllers */,
+				FDBC3B71210D0499006C1FCB /* Support Files */,
 				FDBC3B4C210CFE55006C1FCB /* Info.plist */,
 			);
 			path = VincentVanGogh;
@@ -123,6 +125,34 @@
 				FDBC3B62210CFE55006C1FCB /* Info.plist */,
 			);
 			path = VincentVanGoghUITests;
+			sourceTree = "<group>";
+		};
+		FDBC3B70210D0491006C1FCB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FDBC3B6E210D048B006C1FCB /* PaintngCollection.swift */,
+				FDBC3B73210D05C2006C1FCB /* PaintingCell.swift */,
+				FDBC3B77210D069B006C1FCB /* Painting.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FDBC3B71210D0499006C1FCB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FDBC3B40210CFE54006C1FCB /* AppDelegate.swift */,
+				FDBC3B47210CFE55006C1FCB /* Assets.xcassets */,
+				FDBC3B44210CFE54006C1FCB /* Main.storyboard */,
+				FDBC3B49210CFE55006C1FCB /* LaunchScreen.storyboard */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		FDBC3B72210D04B6006C1FCB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +286,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDBC3B43210CFE54006C1FCB /* ViewController.swift in Sources */,
 				FDBC3B41210CFE54006C1FCB /* AppDelegate.swift in Sources */,
+				FDBC3B6F210D048B006C1FCB /* PaintngCollection.swift in Sources */,
+				FDBC3B74210D05C2006C1FCB /* PaintingCell.swift in Sources */,
+				FDBC3B78210D069B006C1FCB /* Painting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
